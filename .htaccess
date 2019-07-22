@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ index.php?q=$1 [L,QSA]
+
+#AuthType Basic
+#AuthName "Input username and password"
+#AuthUserFile C:\www\part\.htpasswd
+#Require valid-user
